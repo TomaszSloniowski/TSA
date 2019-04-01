@@ -13,45 +13,35 @@
 </head>
 
 <body>
-    <header class="container header">
+    <header class="container header fade-in--second">
         <nav>
-            <ul class="nav__project-types">
-                <a class="header__nav__link" href="#residential">
-                    <li class="project-types__item">RESIDENTIAL</li>
-                </a>
-                <a class="header__nav__link" href="#office">
-                    <li class="project-types__item">OFFICE</li>
-                </a>
-                <a class="header__nav__link" href="#public">
-                    <li class="project-types__item">PUBLIC</li>
-                </a>
-                <a class="header__nav__link" href="#all">
-                    <li class="project-types__item">ALL</li>
-                </a>
+            <ul class="header__nav" onclick="selectProjectType(event)">
+                <li><a class="header__nav__link" href="#residential">RESIDENTIAL</a></li>
+                <li><a class="header__nav__link" href="#office">OFFICE</a></li>
+                <li><a class="header__nav__link" href="#public">PUBLIC</a></li>
+            <!-- <li><a class="header__nav__link" href="#all">ALL</a></li>-->   
             </ul>
         </nav>
-        <figure>
+        <figure class="header__logo">
             <img class="logo" src="./image/logo/Tsa_logo.jpg" alt="logo">
             <figcaption class="logo__subtitle">ARCHITECTURE</figcaption>
         </figure>
     </header>
-    <main class="container main-content" onload="parent.scrollTo(0,0)">
-        <div id="office" class="page">
-            <section>
-                <figure class="project__card">
-                    <a class="project__link" href="/project4.html"><img class="project__thumbnail"
-                            src="./image/works/work-4.jpg" alt="office building"></a>
-                    <figcaption class="project__thumbnail__caption">
-                        <h3 class="project__thumbnail__caption__first">The Polish Television Recording Studios</h3>
-                        <h4 class="project__thumbnail__caption__second">WARSAW, POLAND</h4>
-                    </figcaption>
-                </figure>
-            </section>
+    <main class="container">
+        <div id="office" class="page fade-in--second">
+            <figure class="project__card">
+                <a class="project__link" href="#project4"><img class="project__thumbnail" src="./image/works/work-4.jpg"
+                        alt="office building"></a>
+                <figcaption class="project__thumbnail__caption">
+                    <h3 class="project__thumbnail__caption__first">The Polish Television information channels</h3>
+                    <h4 class="project__thumbnail__caption__second">WARSAW, POLAND</h4>
+                </figcaption>
+            </figure>
         </div>
-        <div id="public" class="page">
+        <div id="public" class="page fade-in--second">
             <section>
                 <figure class="project__card">
-                    <a class="project__link" href="/project7.html"><img class="project__thumbnail"
+                    <a class="project__link" href="#project7"><img class="project__thumbnail"
                             src="./image/works/work-7.jpg" alt="kindergarten"></a>
                     <figcaption class="project__thumbnail__caption">
                         <h3 class="project__thumbnail__caption__first">Kindergarten</h3>
@@ -59,16 +49,7 @@
                     </figcaption>
                 </figure>
                 <figure class="project__card">
-                    <a class="project__link" href="/project5.html"><img class="project__thumbnail"
-                            src="./image/works/work-5.jpg" alt="mamorial chamber"></a>
-                    <figcaption class="project__thumbnail__caption">
-                        <h3 class="project__thumbnail__caption__first">Memorial Chamber near the Warsaw Insurgents
-                            Cemetery</h3>
-                        <h4 class="project__thumbnail__caption__second">WARSAW, POLAND</h4>
-                    </figcaption>
-                </figure>
-                <figure class="project__card">
-                    <a class="project__link" href="/project9.html"><img class="project__thumbnail"
+                    <a class="project__link" href="#project9"><img class="project__thumbnail"
                             src="./image/works/work-9.jpg" alt="museum"></a>
                     <figcaption class="project__thumbnail__caption">
                         <h3 class="project__thumbnail__caption__first">Pilecki Family House Museum</h3>
@@ -76,7 +57,7 @@
                     </figcaption>
                 </figure>
                 <figure class="project__card">
-                    <a class="project__link" href="/project6.html"><img class="project__thumbnail"
+                    <a class="project__link" href="#project6"><img class="project__thumbnail"
                             src="./image/works/work-6.jpg" alt=""></a>
                     <figcaption class="project__thumbnail__caption">
                         <h3 class="project__thumbnail__caption__first">Cultural Cadre Center</h3>
@@ -85,71 +66,423 @@
                 </figure>
             </section>
         </div>
-        <div id="residential" class="page default">
-                <section class="project-page">
-                    <figure class="project__card">
-                        <a class="project__link" href="/project1.html"><img class="project__thumbnail"
-                                src="./image/works/work-1.jpg" alt="multi-family building"></a>
-                        <figcaption class="project__thumbnail__caption">
-                            <h3 class="project__thumbnail__caption__first">Multi-family building</h3>
-                            <h4 class="project__thumbnail__caption__second">BYDGOSZCZ, POLAND</h4>
-                        </figcaption>
-                    </figure>
-                    <figure class="project__card">
-                        <a class="project__link" href="/project2.html"><img class="project__thumbnail"
-                                src="./image/works/work-2.jpg" alt="multi-family building"></a>
-                        <figcaption class="project__thumbnail__caption">
-                            <h3 class="project__thumbnail__caption__first">Single-family house</h3>
-                            <h4 class="project__thumbnail__caption__second">WARSAW, POLAND</h4>
-                        </figcaption>
-                    </figure>
-                    <figure class="project__card">
-                        <a class="project__link" href="/project3.html"><img class="project__thumbnail"
-                                src="./image/works/work-3.jpg" alt="multi-family building"></a>
-                        <figcaption class="project__thumbnail__caption">
-                            <h3 class="project__thumbnail__caption__first">Single-family house</h3>
-                            <h4 class="project__thumbnail__caption__second">BIAŁA RAWSKA, POLAND</h4>
-                        </figcaption>
-                    </figure>
-                    <figure class="project__card">
-                        <a class="project__link" href="/project8.html"><img class="project__thumbnail"
-                                src="./image/works/work-8.jpg" alt="multi-family building"></a>
-                        <figcaption class="project__thumbnail__caption">
-                            <h3 class="project__thumbnail__caption__first">Single-family house</h3>
-                            <h4 class="project__thumbnail__caption__second">WARSAW, POLAND</h4>
-                        </figcaption>
-                    </figure>
+
+        <!--------------------------------------------------->
+        <!--------- Residential buildings - details --------->
+        <!--------------------------------------------------->
+        <!-------------- Project 1 - details ---------------->
+
+        <div id="project1" class="page fade-in--second">
+            <article class="project-page">
+                <section>
+                    <img class="project__image" src="./image/works/work-1.jpg" alt="multi-family building">
+                    <img class="project__image" src="./image/works/work-1_2.jpg" alt="multi-family building">
                 </section>
-            </div>
-    </main>
+                <section>
+                    <h3 class="project__name">Multi-family Residential</h3>
+                    <p class="project__description">
+                        Building with three storeys with a residential function and underground garage,
+                        technical and fitness rooms. It is a compact block on a rectangular plan.
+                        The characteristic element of all elevations are deep loggias of different dimensions,
+                        with walls and balustrades with finish of light wood facade boards
+                    </p>
+                </section>
+                <section>
+                    <ul class="project-details__list">
+                        <li class="project-detail__title">Location
+                        <li class="project-detail">Bydgoszcz, Poland</li>
+                        <li class="project-detail__title">Client</li>
+                        <li class="project-detail">EBUD-TBS</li>
+                        <li class="project-detail__title">Project team</li>
+                        <li class="project-detail">Tomasz Słoniowski</li>
+                        <li class="project-detail">Sylwia Sopińska</li>
+                        <li class="project-detail">Agata Polkowska</li>
+                        <li class="project-detail__title">Project stage</li>
+                        <li class="project-detail">Architectural design competition</li>
+                        <li class="project-detail__title">Date</li>
+                        <li class="project-detail">Febuary 2015</li>
+                    </ul>
+                </section>
+                <nav class="bottom__nav">
+                    <ul>
+                        <li class="bottom__nav__list__item"><i class="fas fa-long-arrow-alt-left bottom__nav__list__icon"></i> <a class="bottom__nav__link" href="#residential">back</a></li>
+                    </ul>
+                </nav>
+            </article>
+
+        </div>
+
+        <!--------------------------------------------------->
+        <!-------------- Project 2 - details ---------------->
+
+        <div id="project2" class="page fade-in--second">
+            <article class="project-page">
+                <section>
+                    <img class="project__image" src="./image/works/work-2.jpg" alt="single-family house">
+                    <img class="project__image" src="./image/works/work-2_1.jpg" alt="single-family house">
+                    <img class="project__image" src="./image/works/work-2_2.jpg" alt="single-family house">
+
+                </section>
+                <section>
+                    <h3 class="project__name">Multi-family Residential</h3>
+                    <p class="project__description">
+                        The project is an attempt to solve a rich functional program, including a garage,
+                        in a simple block. Hand-fired facade bricks, details from titanium-zinc sheet and glass
+                        balustrades emphasize the elegance of the building's character.
+                        Elevated windows on the first floor allow for better lighting of
+                        the interior and provide distinctive accents to diversify the building's shape.
+                        The winter garden closing the hall on the first floor creates a unique atmosphere
+                        of the private space of the residents.
+                    </p>
+                </section>
+                <section>
+                    <ul class="project-details__list">
+                        <li class="project-detail__title">Location
+                        <li>
+                        <li class="project-detail">Warsaw, Poland</li>
+                        <li class="project-detail__title">Client</li>
+                        <li class="project-detail">Private</li>
+                        <li class="project-detail__title">Designer</li>
+                        <li class="project-detail">Tomasz Słoniowski</li>
+                        <li class="project-detail__title">Project stage</li>
+                        <li class="project-detail">Concept design</li>
+                        <li class="project-detail__title">Date</li>
+                        <li class="project-detail">2010</li>
+                    </ul>
+                </section>
+                <nav class="bottom__nav">
+                    <ul>
+                        <li class="bottom__nav__list__item"><i class="fas fa-long-arrow-alt-left bottom__nav__list__icon"></i> <a class="bottom__nav__link" href="#residential">back</a></li>
+                    </ul>
+                </nav>
+            </article>
+        </div>
+
+        <!--------------------------------------------------->
+        <!-------------- Project 3 - details ---------------->
+
+        <div id="project3" class="page fade-in--second">
+            <article class="project-page">
+                <section>
+                    <img class="project__image" src="./image/works/work-3.jpg" alt="single-family house">
+                    <img class="project__image" src="./image/works/work-3_1.jpg" alt="single-family house">
+                </section>
+                <section>
+                    <h3 class="project__name">Single-family house</h3>
+                    <p class="project__description">
+                        The house is located among meadows and orchards, allowing weekend rest for a family of four.
+                        Simple architecture and limited to the necessary minimum building utility program and mutual
+                        relations with the surrounding greenery provide comfort and relaxation after a week of work.
+                        The center of the house is a living room with a fireplace and a dining room opening through
+                        large sliding windows onto a sunny terrace, which background is the natural green wall.
+                    </p>
+                </section>
+                <section>
+                    <ul class="project-details__list">
+                        <li class="project-detail__title">Location
+                        <li class="project-detail">Biała Rawska, Poland</li>
+                        <li class="project-detail__title">Client</li>
+                        <li class="project-detail">Private</li>
+                        <li class="project-detail__title">Designer</li>
+                        <li class="project-detail">Tomasz Słoniowski</li>
+                        <li class="project-detail__title">Project stage</li>
+                        <li class="project-detail">Concept design</li>
+                        <li class="project-detail__title">Date</li>
+                        <li class="project-detail">2009</li>
+                    </ul>
+                </section>
+                <nav class="bottom__nav">
+                    <ul>
+                        <li class="bottom__nav__list__item"><i class="fas fa-long-arrow-alt-left bottom__nav__list__icon"></i> <a class="bottom__nav__link" href="#residential">back</a></li>
+                    </ul>
+                </nav>
+            </article>
+        </div>
+
+       <!--------------------------------------------------->
+       <!-------------- Project 8 - details ---------------->
+
+        <div id="project8" class="page fade-in--second">
+            <article class="project-page">
+                <section>
+                    <img class="project__image" src="./image/works/work-8.jpg" alt="single-family house">
+                    <img class="project__image" src="./image/works/work-8_2.jpg" alt="single-family house">
+                    <img class="project__image" src="./image/works/work-8_3.jpg" alt="single-family house">
+
+                </section>
+                <section>
+                    <h3 class="project__name">Single-family house</h3>
+                    <p class="project__description">
+                        The concept assumes the reconstruction of a single-family house from the 1970s
+                        into two single-family semi-detached houses. The underground part was adapted
+                        to the garage, while the ground floor underwent a complete metamorphosis.
+                        The two twin, two-segment parts are visually one cohesive whole,
+                        fastened by the slightly elevated floor, emphasized by a wooden cladding on the façade.
+                        Apartments on the first floor also have large terraces with pergolas at the roof level.
+                        The wider shape of the building from the front side has staircases located on the sides,
+                        enabling independent access to apartments.
+                </section>
+                <section>
+                    <ul class="project-details__list">
+                        <li class="project-detail__title">Location
+                        <li class="project-detail">Warsaw, Poland</li>
+                        <li class="project-detail__title">Client</li>
+                        <li class="project-detail">Private</li>
+                        <li class="project-detail__title">Designer</li>
+                        <li class="project-detail">Tomasz Słoniowski</li>
+                        <li class="project-detail__title">Project stage</li>
+                        <li class="project-detail">Concept design / Detailed design</li>
+                        <li class="project-detail__title">Date</li>
+                        <li class="project-detail">2018</li>
+                        <li class="project-detail__title">Construction</li>
+                        <li class="project-detail">2019</li>
+                    </ul>
+                </section>
+                <nav class="bottom__nav">
+                    <ul>
+                        <li class="bottom__nav__list__item"><i class="fas fa-long-arrow-alt-left bottom__nav__list__icon"></i> <a class="bottom__nav__link" href="#residential">back</a></li>
+                    </ul>
+                </nav>
+            </article>
+        </div>
+
+        <!--------------------------------------------------->
+        <!----------- Office buildings - details ------------>
+        <!--------------------------------------------------->
+        <!-------------- Project 4 - details ---------------->
+
+        <div id="project4" class="page fade-in--second">
+            <article>
+                <section>
+                    <img class="project__image" src="./image/works/work-4.jpg" alt="office building">
+                    <img class="project__image" src="./image/works/work-4_1.jpg" alt="office building">
+                </section>
+                <section>
+                    <h3 class="project__name">The Polish Television information channels</h3>
+                    <p class="project__description">
+                        The concept of TVP's information channels building was to create an object corresponding
+                        to the prestige and rank of Polish Television as an important public institution.
+                        The complex consists of two parts with different heights, closely related to each other
+                        functionally and spatially: recording studios with auxiliary zones, Newsroom and main hall
+                        and administrative office. On the elevation of the lower part of the building, light façade
+                        panels of warm colours were used, complemented by green planting. The culmination of this
+                        part of the building is made by bay windows on the top floor. The elevation of the office
+                        and administration part was designed in a façade system with irregular modules giving it
+                        lightness and dynamics. The whole block is crowned with a 12-storey dominant, subtly
+                        cut off from the lower part of the building. The separation of this part of the building
+                        is emphasized by the eastern facade made from triangular inclined planes.
+                    </p>
+                </section>
+                <section>
+                    <ul class="project-details__list">
+                        <li class="project-detail__title">Location
+                        <li class="project-detail">Warsaw, Poland</li>
+                        <li class="project-detail__title">Client</li>
+                        <li class="project-detail">TVP S.A.</li>
+                        <li class="project-detail__title">Project team</li>
+                        <li class="project-detail">Tomasz Słoniowski</li>
+                        <li class="project-detail">Maciej Matejak</li>
+                        <li class="project-detail">Jacek Kretkiewicz</li>
+                        <li class="project-detail__title">Project stage</li>
+                        <li class="project-detail">Architectural design competition</li>
+                        <li class="project-detail__title">Date</li>
+                        <li class="project-detail">July 2015</li>
+                    </ul>
+                </section>
+                <nav class="bottom__nav">
+                    <ul>
+                        <li class="bottom__nav__list__item"><i class="fas fa-long-arrow-alt-left bottom__nav__list__icon"></i> <a class="bottom__nav__link" href="#office">back</a></li>
+                    </ul>
+                </nav>
+            </article>
+
+        </div>
+
+        <!--------------------------------------------------->
+        <!----------- Public buildings - details ------------>
+        <!--------------------------------------------------->
+        <!-------------- Project 7 - details ---------------->
+
+        <div id="project7" class="page fade-in--second">
+            <article class="project-page">
+                <section>
+                    <img class="project__image" src="./image/works/work-7.jpg" alt="kindergarten">
+                    <img class="project__image" src="./image/works/work-7_2.jpg" alt="kindergarten">
+                    <img class="project__image" src="./image/works/work-7_3.jpg" alt="kindergarten">
+                </section>
+                <section>
+                    <h3 class="project__name">Kindergarten</h3>
+                    <p class="project__description">
+                        Building with kindergarten and nursery as a main function on the ground floor
+                        with office and residential premises on the first floor.
+                        The extensive functional program was able to fit into
+                        a simple block on a small plot of land.
+                        The form of the building is largely due to the geometry of the plot,
+                        communication system and rich functional program. On the ground floor,
+                        a light gray plaster was designed to give weightlessness effect to the whole block.
+                        A characteristic element of the building's shape is also a spacious terrace on the first floor,
+                        belonging to the apartment of the building's owners.
+                </section>
+                <section>
+                    <ul class="project-details__list">
+                        <li class="project-detail__title">Location
+                        <li class="project-detail">Wiązowna, Poland</li>
+                        <li class="project-detail__title">Client</li>
+                        <li class="project-detail">Private</li>
+                        <li class="project-detail__title">Project team</li>
+                        <li class="project-detail">Tomasz Słoniowski</li>
+                        <li class="project-detail">Sylwia Sopińska</li>
+                        <li class="project-detail">Agata Polkowska</li>
+                        <li class="project-detail__title">Project stage</li>
+                        <li class="project-detail">Concept design / Detailed design</li>
+                        <li class="project-detail__title">Date</li>
+                        <li class="project-detail">2018</li>
+                        <li class="project-detail__title">Construction</li>
+                        <li class="project-detail">2018-2019</li>
+                    </ul>
+                </section>
+                <nav class="bottom__nav">
+                    <ul>
+                        <li class="bottom__nav__list__item"><i class="fas fa-long-arrow-alt-left bottom__nav__list__icon"></i> <a class="bottom__nav__link" href="#public">back</a></li>
+                    </ul>
+                </nav>
+            </article>
+        </div>
+
+        <!--------------------------------------------------->
+        <!-------------- Project 9 - details ---------------->
+
+        <div id="project9" class="page fade-in--second">
+            <article class="project-page">
+                <section>
+                    <img class="project__image" src="./image/works/work-9.jpg" alt="museum">
+                    <img class="project__image" src="./image/works/work-9_2.jpg" alt="museum">
+                    <img class="project__image" src="./image/works/work-9_3.jpg" alt="museum">
+                    <img class="project__image" src="./image/works/work-9_4.jpg" alt="museum">
+                    <img class="project__image" src="./image/works/work-9_5.jpg" alt="museum">
+                    <img class="project__image" src="./image/works/work-9_6.jpg" alt="museum">
+                </section>
+                <section>
+                    <h3 class="project__name">Pilecki Family House Museum</h3>
+                    <p class="project__description">
+                    </p>
+                </section>
+                <section>
+                    <ul class="project-details__list">
+                        <li class="project-detail__title">Location
+                        <li class="project-detail">Ostrów Mazowiecka, Poland</li>
+                        <li class="project-detail__title">Client</li>
+                        <li class="project-detail">Pilecki Family House Museum</li>
+                        <li class="project-detail__title">Project team</li>
+                        <li class="project-detail">Tomasz Słoniowski</li>
+                        <li class="project-detail">Agata Polkowska</li>
+                        <li class="project-detail">Wojciech Sitkiewicz</li>
+                        <li class="project-detail__title">Project stage</li>
+                        <li class="project-detail">Architectural Design Competition</li>
+                        <li class="project-detail__title">Date</li>
+                        <li class="project-detail">2017</li>
+                    </ul>
+                </section>
+                <nav class="bottom__nav">
+                    <ul>
+                        <li class="bottom__nav__list__item"><i class="fas fa-long-arrow-alt-left bottom__nav__list__icon"></i> <a class="bottom__nav__link" href="#residential">back</a></li>
+                    </ul>
+                </nav>
+            </article>
+        </div>
+
+        <!--------------------------------------------------->
+        <!-------------- Project 6 - details ---------------->
+
+        <div id="project6" class="page fade-in--second">
+            <article class="project-page">
+                <section>
+                    <img class="project__image" src="./image/works/work-6.jpg" alt="cultural center">
+                    <img class="project__image" src="./image/works/work-6_1.jpg" alt="cultural center">
+                    <img class="project__image" src="./image/works/work-6_2.jpg" alt="cultural center">
+                    <img class="project__image" src="./image/works/work-6_3.jpg" alt="cultural center">
+                    <img class="project__image" src="./image/works/work-6_4.jpg" alt="cultural center">
+                </section>
+                <section>
+                    <h3 class="project__name">Cultural Cadre Center</h3>
+                    <p class="project__description">
+                        The idea of the form of the Cultural Cadre Center was to create architecture corresponding to
+                        an individualized function of a house of high cultural-forming importance,
+                        while avoiding imposing that would not match the surroundings.
+                        The elevation was designed to be intriguing and inviting.
+                        The glazing is designed as colour glass. The multiplicity of colours
+                        suggests a variety of activities available in the Cultural Center.
+                </section>
+                <section>
+                    <ul class="project-details__list">
+                        <li class="project-detail__title">Location
+                        <li class="project-detail">Warsaw, Poland</li>
+                        <li class="project-detail__title">Client</li>
+                        <li class="project-detail">Cultural Cadre Center</li>
+                        <li class="project-detail__title">Project team</li>
+                        <li class="project-detail">Tomasz Słoniowski</li>
+                        <li class="project-detail">Maciej Matejak</li>
+                        <li class="project-detail">Filip Karczemski</li>
+                        <li class="project-detail__title">Project stage</li>
+                        <li class="project-detail">Architectura Design Competition</li>
+                        <li class="project-detail__title">Date</li>
+                        <li class="project-detail">2009</li>
+                    </ul>
+                    </section>
+                    <nav class="bottom__nav">
+                        <ul>
+                            <li class="bottom__nav__list__item"><i class="fas fa-long-arrow-alt-left bottom__nav__list__icon"></i> <a class="bottom__nav__link" href="#public">back</a></li>
+                        </ul>
+                    </nav>
+            </article>
+        </div>
+
+    <div id="residential" class="page default fade-in--second">
+        <section>
+            <figure class="project__card">
+                <a class="project__link" href="#project1"><img class="project__thumbnail"
+                        src="./image/works/work-1.jpg" alt="multi-family building"></a>
+                <figcaption class="project__thumbnail__caption">
+                    <h3 class="project__thumbnail__caption__first">Multi-family Residential</h3>
+                    <h4 class="project__thumbnail__caption__second">BYDGOSZCZ, POLAND</h4>
+                </figcaption>
+            </figure>
+            <figure class="project__card">
+                <a class="project__link" href="#project2"><img class="project__thumbnail"
+                        src="./image/works/work-2.jpg" alt="multi-family building"></a>
+                <figcaption class="project__thumbnail__caption">
+                    <h3 class="project__thumbnail__caption__first">Single-family house</h3>
+                    <h4 class="project__thumbnail__caption__second">WARSAW, POLAND</h4>
+                </figcaption>
+            </figure>
+            <figure class="project__card">
+                <a class="project__link" href="#project3"><img class="project__thumbnail"
+                        src="./image/works/work-3.jpg" alt="multi-family building"></a>
+                <figcaption class="project__thumbnail__caption">
+                    <h3 class="project__thumbnail__caption__first">Single-family house</h3>
+                    <h4 class="project__thumbnail__caption__second">BIAŁA RAWSKA, POLAND</h4>
+                </figcaption>
+            </figure>
+            <figure class="project__card">
+                <a class="project__link" href="#project8"><img class="project__thumbnail"
+                        src="./image/works/work-8.jpg" alt="multi-family building"></a>
+                <figcaption class="project__thumbnail__caption">
+                    <h3 class="project__thumbnail__caption__first">Single-family house</h3>
+                    <h4 class="project__thumbnail__caption__second">WARSAW, POLAND</h4>
+                </figcaption>
+            </figure>
+        </section>
+    </div>
+</main>
 
     <footer class="container">
         <nav class="footer__nav">
             <ul class="footer__nav__list">
-                <a class="footer__icons" href="https://www.facebook.com/TSArchitekt/">
-                    <i class="fab fa-facebook-square footer__icons"></i>
-                </a>
-                <a class="footer__nav__link" href="/about.html">
-                    <li class="footer__nav__item">About</li>
-                </a>
-                <a class="footer__nav__link" href="/portfolio.html">
-                    <li class="footer__nav__item">Portfolio</li>
-                </a>
-                <a class="footer__nav__link" href="">
-                    <li class="footer__nav__item">Contact</li>
-                </a>
+                 <li class="footer__nav__item"><a class="footer__nav__link" href="/about.html">ABOUT | CONTACT</a></li>
             </ul>
         </nav>
     </footer>
-<script>
-function topFunction() {
-    console.log('move to top');
-    document.body.scrollTop = 0;
-    /*
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0; */
-}
-</script>
+
     <script src="js/scripts.js"></script>
 </body>
 
