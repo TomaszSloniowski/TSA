@@ -13,8 +13,8 @@
  </head>
 
 <body>
-    <header class="container header fade-in--second">
-        <nav>
+    <header class="container">
+        <nav class="">
             <ul class="header__nav" onclick="selectProjectType(event)">
                 <li><a class="header__nav__link" href="#residential">RESIDENTIAL</a></li>
                 <li><a class="header__nav__link" href="#office">OFFICE</a></li>
@@ -440,7 +440,7 @@
     <div id="residential" class="page default fade-in--second">
         <section>
             <figure class="project__card">
-                <a class="project__link" href="#project1"><img class="project__thumbnail"
+                <a class="project__link" href="#project1" onclick="window.scroll(0,0)"><img class="project__thumbnail"
                         src="./image/works/work-1.jpg" alt="multi-family building"></a>
                 <figcaption class="project__thumbnail__caption">
                     <h3 class="project__thumbnail__caption__first">Multi-family Residential</h3>
