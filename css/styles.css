@@ -119,6 +119,7 @@ ul {
 .contact__info__link {
     font-size: 0.9rem;
     color: black;
+    text-decoration: none;
 }
 
 .contact__info__list {
