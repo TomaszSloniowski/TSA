@@ -116,7 +116,7 @@ section.landing-page__logo {
     align-self: center;
     font-size: 0.8rem;
     max-width: 260px;
-    padding: 10px;
+    padding: 15px 0px 0px 0px;
     margin: 0px;
     color: darkgray;
 }
