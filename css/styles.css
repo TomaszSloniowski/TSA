@@ -65,9 +65,8 @@ ul {
 
 section.landing-page__logo {
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
-    display: flex;
     padding-top: 150px;
 }
 
